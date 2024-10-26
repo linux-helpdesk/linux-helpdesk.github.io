@@ -82,10 +82,10 @@ Error: Process completed with exit code 1.
 
 {% raw %}
 ```plaintext
-\{% raw %\}
-\```plaintext
+{% raw %}
+```plaintext
 [Output texts]
-\```
-\{% endraw %\}
+```
+{% endraw %}
 ```
 {% endraw %}
