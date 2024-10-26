@@ -80,12 +80,8 @@ Error: Process completed with exit code 1.
 
 而报错原因其实是代码块中包含 Jeklly 语法的保留字，此时需要在代码块前后加入如下装饰以暂停使用 Liquid 语法进行渲染：
 
-{% raw %}
-````plaintext
-{% raw %}
+\{\% raw \%\}
 ```plaintext
 [Output texts]
 ```
-{% endraw %}
-````
-{% endraw %}
+\{\% endraw \%\}
