@@ -1,8 +1,8 @@
 ---
-title: "Jupyter Notebook 导出 HTML 报错 KeyError: 'state'"
+title: "Github Page 渲染 Jeklly 失败"
 author: "Zhao Zilong"
 date: 2024-10-26
-category: AI
+category: Linux
 layout: post
 ---
 
@@ -80,6 +80,7 @@ Error: Process completed with exit code 1.
 
 而报错原因其实是代码块中包含 Jeklly 语法的保留字，此时需要在代码块前后加入如下装饰以暂停使用 Liquid 语法进行渲染：
 
+{% raw %}
 ````plaintext
 {% raw %}
 ```plaintext
@@ -87,3 +88,4 @@ Error: Process completed with exit code 1.
 ```
 {% endraw %}
 ````
+{% endraw %}
