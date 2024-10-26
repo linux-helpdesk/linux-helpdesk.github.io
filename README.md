@@ -6,12 +6,6 @@ permalink: /
 
 致力于解决 Linux 平台上的各种问题，提供实用的教程和技巧，让你的 Linux 使用更高效！
 
-## Demo
-
-访问演示页面：[https://linux-helpdesk.github.io](https://linux-helpdesk.github.io)
-
-[![Jekyll Themes](https://img.shields.io/badge/featured%20on-JekyllThemes-red.svg)](https://jekyll-themes.com/linux-helpdesk/)
-
 ## 为什么选择 Linux-Helpdesk
 
 在这里，我们专注于解决 Linux 平台上的各类问题，涵盖系统配置、命令行技巧、软件安装、性能优化等内容，帮助你轻松掌握 Linux 技能！
@@ -45,14 +39,5 @@ permalink: /
 
 ### 搜索功能
 
-本博客支持全文搜索，你可以直接在站点中通过关键字查找相关内容。
-
-[https://linux-helpdesk.github.io/?q=example](https://linux-helpdesk.github.io/?q=example)
-
-### 代码高亮
-
-支持多种代码高亮样式，可以在 `_config.yml` 文件中配置，默认样式为 `colorful`，你可以根据需要修改。
-
-```yaml
-syntax_highlighter_style: colorful
+本博客支持全文搜索，你可以直接在站点左上角通过关键字查找相关内容。
 
