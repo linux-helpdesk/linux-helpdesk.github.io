@@ -1,5 +1,5 @@
 ---
-title: "Github Page 渲染 Jeklly 失败"
+title: "Github Page 渲染 Jeklly 页面失败"
 author: "Zhao Zilong"
 date: 2024-10-26
 category: Linux
