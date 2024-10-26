@@ -6,6 +6,8 @@ category: Author
 layout: post
 ---
 
+![作者头像](/assets/images/head.jpeg){: width="150px" style="border-radius: 50%;" }
+
 ## 赵紫龙
 
 > 为往圣继绝学，为万世开太平
