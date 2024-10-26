@@ -1,8 +1,8 @@
 ---
-title: Jupyter Notebook 导出 HTML 报错 KeyError: 'state'
-author: Zhao Zilong
+title: "Jupyter Notebook 导出 HTML 报错 KeyError: 'state'"
+author: "Zhao Zilong"
 date: 2024-10-26
-category: Jekyll
+category: AI
 layout: post
 ---
 
