@@ -27,16 +27,6 @@ permalink: /
 - **错误汇总**：常见问题的解决方案，避免踩坑。
 - **性能优化**：详细的系统和应用优化指南，提高 Linux 的性能表现。
 
-## 如何开始使用 Linux-Helpdesk
-
-本博客使用了 Jekyll 和 GitBook 风格的主题模板，可以在本地使用 Jekyll 进行部署和测试。详见 [本地部署指南](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll)。
-
-如果你有兴趣，可以将本博客项目 Fork 到你的 GitHub 中，并开始添加或自定义内容：
-
-- [Fork 本项目](https://github.com/linux-helpdesk/linux-helpdesk.github.io/fork)
-- 在 `_posts` 文件夹中添加你的 Markdown 格式的博客文章
-- 在 `_config.yml` 文件中更改博客配置
-
 ### 搜索功能
 
 本博客支持全文搜索，你可以直接在站点左上角通过关键字查找相关内容。
