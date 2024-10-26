@@ -8,6 +8,7 @@ layout: post
 
 当时用 Jupyter Notebook 导出 `.ipynb` 文件的 HTML 文件时会报如下错误：
 
+{% raw %}
 ```plaintext
 (pytorch-gpu) ..[warren@localhost] - [~/Downloads/dl] - [五 10月 25, 04:24]
 ..[$] <()> jupyter nbconvert --to html main.ipynb
@@ -112,6 +113,7 @@ Traceback (most recent call last):
 KeyError: 'state'
 
 ```
+{% endraw %}
 
 程序会出现上述错误的原因是 ipynb 文件中存在一些 widgets 控件，这些控件存在的目的是增加文件的可交互性。但有时即使开发者并没有添加这些控件，控件依然会被加入文件中。（如从 Google Colab 下载脚本文件时，会自动添加控件）
 
