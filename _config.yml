@@ -1,16 +1,18 @@
 # Configurations
-title:            Jekyll Gitbook
-longtitle:        Jekyll Gitbook
-author:           HE Tao
-email:            sighingnow@gmail.com
+title:            Linux Helpdesk
+longtitle:        Linux Helpdesk
+author:           Zhao Zilong
+email:            linuxhelpdesk@outlook.com
 description: >
-  Build Jekyll site with the GitBook style.
+  一个致力于 Linux 问题解决的博客
 
 version:          1.0
 gitbook_version:  3.2.3
 
-url:              'https://sighingnow.github.io'
-baseurl:          '/jekyll-gitbook'
+# url:              'https://sighingnow.github.io'
+url:              'https://linux-helpdesk.github.io'
+# baseurl:          '/jekyll-gitbook'
+baseurl:          '/linux-helpdesk.github.io'
 rss:              RSS
 
 # bootstrap: use the remote theme for the site itself
