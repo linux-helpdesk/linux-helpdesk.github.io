@@ -8,7 +8,7 @@ layout: post
 
 当时用 Jupyter Notebook 导出 `.ipynb` 文件的 HTML 文件时会报如下错误：
 
-```
+```plaintext
 (pytorch-gpu) ..[warren@localhost] - [~/Downloads/dl] - [五 10月 25, 04:24]
 ..[$] <()> jupyter nbconvert --to html main.ipynb
 [NbConvertApp] Converting notebook main.ipynb to html
@@ -117,7 +117,7 @@ KeyError: 'state'
 
 此时使用如下命令去除控件信息，然后再进行导出：
 
-```
+```bash
 # 去除控件信息
 jq -M 'del(.metadata.widgets)'  main.ipynb > main_rm.ipynb
 # 转换导出
