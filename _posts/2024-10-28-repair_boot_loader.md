@@ -1,7 +1,7 @@
 ---
 title: "Linux 修复引导万能方法"
 author: "Zhao Zilong"
-date: 2024-10-29
+date: 2024-10-28
 category: Linux
 layout: post
 ---
