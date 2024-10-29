@@ -74,3 +74,7 @@ plugins:
   - jekyll-feed
   - jekyll-readme-index
   - jemoji
+
+
+baidu:
+  id: 6cceb90e930713f51a1d29992ff87b18
