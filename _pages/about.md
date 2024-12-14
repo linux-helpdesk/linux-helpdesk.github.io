@@ -23,7 +23,7 @@ layout: post
 - **Linux 运维**：服务器管理、系统配置、性能调优
 - **网络安全**：基本安全测试与防护
 - **爬虫开发**：数据采集与信息抓取
-- **编程语言**：Python、Shell 等
+- **编程语言**：Python、Shell、HTML、JavaScript、CSS、C、Java、Smali 等
 - **语言**：英语（流利）、法语（基础）
 - **其他**：吉他演奏
 
