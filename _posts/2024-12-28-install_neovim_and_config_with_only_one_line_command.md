@@ -34,7 +34,7 @@ proxychains4 curl https://install-neovim.github.io | bash
 proxychains4 curl https://install-neovim.github.io > install.sh
 ```
 
-#### **特定语言开发环境配置**
+**特定语言开发环境配置**
 
 上述命令会自动从源码编译安装最新版 Neovim 并自动配置 Lazyvim 到本地系统。安装及配置完成后会自动清理安装 过程中产生的文件。
 
