@@ -44,6 +44,18 @@ Lazyvim 会在 Neovim 打开后自动安装必要的组件，此时如果需要�
 
 如果重新启动 `nvim` 后依然没有安装完成，那就多试几次或使用 `proxychains4 nvim test.py` 挂代理并触发安装。 
 
+#### 2. **特定语言开发环境配置**
+
+上述命令会自动从源码编译安装最新版 Neovim 并自动配置 Lazyvim 到本地系统。安装及配置完成后会自动清理安装 过程中产生的文件。
+
+安装并配置好 Lazyvim 后，可以根据需要通过内置工具安装特定语言的开发环境。例如，配置 Python 开发环境：
+
+1. 在 Neovim 中输入 `:LazyExtras`。
+2. 使用 `/` 搜索关键字 `python`，找到 `lang.python` 并按 `x` 键安装相关插件。
+3. 退出 Neovim 后重新打开，Lazyvim 会自动完成插件的安装。
+
+如果安装未完成，可以尝试多次或通过 `proxychains4 nvim test.py` 启动 Neovim 并触发安装。
+
 **字体**
 
 字体配置非必须，可选择性配置。如果想要像效果图中一样显示图标，则需要下载 [Nerd Fonts](https://www.nerdfonts.com/) 字体，并在本地终端中进行手动配置。
