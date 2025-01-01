@@ -6,6 +6,9 @@ file = sys.argv[1]
 
 file_list = os.listdir("_posts")
 
+# Copy template file
+os.system(f"cp template.md {file}")
+
 # Open or creat file
 os.system(f"nvim {file}")
 
