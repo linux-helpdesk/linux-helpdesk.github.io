@@ -22,11 +22,11 @@ layout: post
 
 **`T`**：按运行时间排序。
 
-<font color='red'>`t`：切换显示进程和 CPU 状态行。</font>
+`t`：<font color='red'>切换显示进程和 CPU 状态行。</font>
 
-<font color=red>`m`：**切换显示内存信息。**</font>
+`m`：<font color=red>切换显示内存信息。</font>
 
-<font color=red>`1`：切换显示每个 CPU 的状态。</font>
+`1`：<font color=red>切换显示每个 CPU 的状态。</font>
 
 启动时的选项：
 
