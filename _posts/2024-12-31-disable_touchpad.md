@@ -11,9 +11,8 @@ sudo apt install libinput-tools xinput
 libinput list-devices
 ```
 
-自动化并设置开机启动 vim /etc/profile.d/disable_touchpad.sh
+自动化并设置开机启动 `vim /etc/profile.d/disable_touchpad.sh`
 
-> #!/bin/bash 
+> #!/bin/bash
 >
 > xinput set-prop “ELAN1204:00 04F3:30B2 Touchpad” “libinput Disable While Typing Enabled” 1
-
