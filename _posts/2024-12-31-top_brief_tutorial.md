@@ -23,12 +23,11 @@ layout: post
 **`T`**：按运行时间排序。
 
 <font color='red'>**`t`**：**切换显示进程和 CPU 状态行。**</font>
-
+<br>
 <font color=red>**`m`**：**切换显示内存信息。**</font>
-
+<br>
 <font color=red>**`1`**：**切换显示每个 CPU 的状态。**</font>
 
 启动时的选项：
 
 - **`top -d <seconds>`**：设置刷新间隔时间，例如 `top -d 2` 每2秒刷新一次。
-
