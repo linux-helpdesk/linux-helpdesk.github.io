@@ -14,15 +14,15 @@ layout: post
   这里由于大多数情况下我们刷写 Pixel OS 的底包并非官方要求的系统版本，原生 Recovery 功能太少无法对某些分区进行格式化，会导致刷写系统包后无法进入系统。
   **所以这里我们统一采用 TWRP 刷写方式。**
 
-2. 文件日期
+1. 文件日期
 
   刷写小米 12 的 Pixel OS 主要涉及五个文件：
 
-- PixelOS_cupid-14.0-xxx.zip
-- dtbo-cupid-xxx.img
-- boot-cupid-xxx.img
-- vendor_boot-cupid-xxx.img
-- twrp-3.7.1_12-v8.6_A14-cupid-skkk.img
+  - PixelOS_cupid-14.0-xxx.zip
+  - dtbo-cupid-xxx.img
+  - boot-cupid-xxx.img
+  - vendor_boot-cupid-xxx.img
+  - twrp-3.7.1_12-v8.6_A14-cupid-skkk.img
 
   **下载前四个文件的时候注意文件名中的日期，应选相同或相近的日期，否则在系统安装那一步会签名校验出错。**
 
