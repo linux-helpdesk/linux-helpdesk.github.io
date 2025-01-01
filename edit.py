@@ -1,8 +1,12 @@
 import os
 import sys
+import time
+
+struct_yes = time.localtime((time.time() - 24 * 60 * 60))
+date = f"{str(struct_yes.tm_year)}-{str(struct_yes.tm_mon)}-{struct_yes.tm_mday}-"
 
 # Read file name
-file = sys.argv[1]
+file = os.path.join("_posts", date + sys.argv[1])
 
 file_list = os.listdir("_posts")
 
