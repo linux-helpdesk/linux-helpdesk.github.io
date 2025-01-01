@@ -18,11 +18,11 @@ layout: post
 
   刷写小米 12 的 Pixel OS 主要涉及五个文件：
 
-    - PixelOS_cupid-14.0-xxx.zip
-    - dtbo-cupid-xxx.img
-    - boot-cupid-xxx.img
-    - vendor_boot-cupid-xxx.img
-    - twrp-3.7.1_12-v8.6_A14-cupid-skkk.img
+- PixelOS_cupid-14.0-xxx.zip
+- dtbo-cupid-xxx.img
+- boot-cupid-xxx.img
+- vendor_boot-cupid-xxx.img
+- twrp-3.7.1_12-v8.6_A14-cupid-skkk.img
 
   **下载前四个文件的时候注意文件名中的日期，应选相同或相近的日期，否则在系统安装那一步会签名校验出错。**
 
@@ -32,6 +32,7 @@ layout: post
 
 - 手机关机后按 `电源键 + 音量下` 进入 Fastboot 模式
 - 依次执行以下几条命令：
+
   ```bash
   fastboot flash vendor_boot <path/to/vendor_boot-xxx.img>
   fastboot flash dtbo <path/to/dtbo-xxx.img>
