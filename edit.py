@@ -5,8 +5,12 @@ import time
 struct_yes = time.localtime((time.time() - 24 * 60 * 60))
 date = f"{str(struct_yes.tm_year)}-{str(struct_yes.tm_mon)}-{struct_yes.tm_mday}-"
 
-# Read file name
-file = os.path.join("_posts", date + sys.argv[1])
+# Read file name and check ral-full path or not
+raw_file = sys.argv[1]
+if "_posts/" in raw_file:
+    file = raw_file
+else:
+    file = os.path.join("_posts", date + raw_file)
 
 file_list = os.listdir("_posts")
 
