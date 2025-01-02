@@ -92,9 +92,7 @@ Action=org.freedesktop.login1.hibernate;org.freedesktop.login1.handle-hibernate-
 ResultActive=yes
 ```
 
-
-
-![img](https://picx.zhimg.com/80/v2-f08254b87825a4e012cfacf499daf55a_1440w.webp?source=d16d100b)
+![](/assets/images/ubuntu_sleep.webp)
 
 其中，swap 分区 /etc/fstab 文件挂载设置如下：
 
