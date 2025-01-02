@@ -12,7 +12,7 @@ layout: post
 
 ![](/assets/images/server-001.webp)
 
-## DIY 坚果云 & [有道云笔记](https://zhida.zhihu.com/search?content_id=389208181&content_type=Answer&match_order=1&q=有道云笔记&zhida_source=entity)
+## DIY 坚果云 & 有道云笔记
 
 给大家推荐一个好用的全平台文件同步工具：`Syncthing`
 
@@ -30,9 +30,9 @@ sudo apt install syncthing
 
 ![](/assets/images/server-003.webp)
 
-项目的 [Github链接](https://link.zhihu.com/?target=https%3A//github.com/syncthing/syncthing) 在此，详情可自行查阅
+项目的 [Github链接](https://github.com/syncthing/syncthing) 在此，详情可自行查阅
 
-## 跑[量化交易](https://zhida.zhihu.com/search?content_id=389208181&content_type=Answer&match_order=1&q=量化交易&zhida_source=entity)
+## 跑量化交易
 
 ![](/assets/images/server-004.webp)
 
@@ -46,11 +46,11 @@ sudo apt install syncthing
 
 ## 科学的上网
 
-我一般使用的就是 `Python` 自带的 `sha***socks`, 当然这里就不详细叙述教程了，有需要的直接阅读[官方文档](https://link.zhihu.com/?target=https%3A//pypi.org/project/shadowsocks/)就好了
+我一般使用的就是 `Python` 自带的 `sha***socks`, 当然这里就不详细叙述教程了，有需要的直接阅读[官方文档](https://pypi.org/project/shadowsocks/)就好了
 
 ## 下崽
 
-你没有听错，不是下载，是下崽。但到底如何让服务器下崽呢，这里就要拿出我们最熟悉的 `ssh` 了。通过 `ssh` 将局域网 Linux 主机[端口映射](https://zhida.zhihu.com/search?content_id=389208181&content_type=Answer&match_order=1&q=端口映射&zhida_source=entity)到公网服务器上，俗称反向代理，也叫做[内网穿透](https://zhida.zhihu.com/search?content_id=389208181&content_type=Answer&match_order=1&q=内网穿透&zhida_source=entity)。
+你没有听错，不是下载，是下崽。但到底如何让服务器下崽呢，这里就要拿出我们最熟悉的 `ssh` 了。通过 `ssh` 将局域网 Linux 主机端口映射到公网服务器上，俗称反向代理，也叫做内网穿透。
 
 在本地输入以下命令
 
