@@ -10,7 +10,7 @@ layout: post
 
 对于许多小内存设备，尤其是 4 M 及以下容量的设备，我们在 Openwrt 刷机时经常能看到官方给出的以下提示：
 
-![4 M 及以下警告](assets/images/openwrt_below_4m_warning.jpg)
+![4 M 及以下警告](/assets/images/openwrt_below_4m_warning.jpg)
 
 上文大意是不建议在闪存容量为 4 M 及以下的设备中刷入 `Openwrt`，这是因为由于极小的容量会导致刷入系统本体加 `luci` 可视化控制台后系统容量所剩无几，无法再安装其他软件，与普通路由相差无几，发挥不出 `Openwrt` 系统的特点与优势。（有时甚至会导致直接无法刷入标准系统）
 
