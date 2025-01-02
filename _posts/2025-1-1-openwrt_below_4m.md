@@ -108,7 +108,7 @@ ssh root@192.168.1.1
 vi /etc/config/fstab
 ```
 
-![Vi 编辑器](https://picx.zhimg.com/80/v2-b9bdebe03c6f7052deccee8a01a0740b_1440w.webp?source=d16d100b)
+![Vi 编辑器](/assets/images/openwrt_below_4m_config.webp)
 
 保存退出后，逐行输入以下代码（一路无脑复制粘贴就好）：
 
@@ -158,7 +158,7 @@ opkg install luci
 
 安装后浏览器输入 `192.168.1.1` 即可打开登录界面。
 
-![Openwrt 登录界面](https://pic1.zhimg.com/80/v2-90c5a0f80c58bd838f07dce206f589a2_1440w.webp?source=d16d100b)
+![Openwrt 登录界面](/assets/images/openwrt_below_4m_login.webp)
 
 至此，我们的安装任务就大功告成啦！
 
