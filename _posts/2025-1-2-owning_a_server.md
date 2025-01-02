@@ -21,7 +21,7 @@ layout: post
 安装步骤非常简单：
 
 ```bash
-$ sudo apt install syncthing
+sudo apt install syncthing
 ```
 
 `Syncthing` 是一款开源免费跨平台的文件同步工具，是基于 P2P 技术实现设备间的文件同步，并且如果你恰巧拥有一台公网服务器(或者一台24小时开机的设备也可)，那么你就能将其变为一款免费的**云**同步工具。
@@ -55,13 +55,13 @@ $ sudo apt install syncthing
 在本地输入以下命令
 
 ```bash
-$ ssh -CR [RemotePort]:localhost:22 [RemoteUser]@[RemoteIp]
+ssh -CR [RemotePort]:localhost:22 [RemoteUser]@[RemoteIp]
 ```
 
 在服务端输入以下命令即可随时随地操控家里的设备啦
 
 ```bash
-$ ssh [LocalUser]@localhost -p [RemotePort]
+ssh [LocalUser]@localhost -p [RemotePort]
 ```
 
 这样你现在就拥有两台服务器了
@@ -69,7 +69,7 @@ $ ssh [LocalUser]@localhost -p [RemotePort]
 当然，`ssh` 在稳定性方面有些不足，所以这里我们可以在本地使用 `autossh` 来增加下稳定性
 
 ```bash
-$ autossh -M [ListenPort] -CR [RemotePort]:localhost:22 [RemoteUser]@[RemoteIp]
+autossh -M [ListenPort] -CR [RemotePort]:localhost:22 [RemoteUser]@[RemoteIp]
 ```
 
 如果你觉得还不够过瘾，服务器几万个端口，想开多少个你随意 /手动滑稽
