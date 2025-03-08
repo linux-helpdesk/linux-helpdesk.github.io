@@ -30,4 +30,5 @@ else:
     os.system(f"git commit -m 'Added {file}'")
 
 # Push
-os.system("proxychains4 git push")
+os.system("git push")
+# os.system("proxychains4 git push")
