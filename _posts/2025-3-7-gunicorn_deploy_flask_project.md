@@ -102,7 +102,7 @@ Gunicorn，全称 **Green Unicorn**，是一个用于 UNIX 系统的 Python WSGI
 
 ### 关于在 `app.py` 中预先配置端口
 
-在开发环境中，通常使用 `app.run()` 方法启动 Flask 内置服务器，并指定主机和端口，如上例中的 `app.run(host='0.0.0.0', port=5000)`。然而，在生产环境中，使用 Gunicorn 等 WSGI 服务器时，**无需**在 `app.py` 中调用 `app.run()`。这是因为 Gunicorn 会自行管理服务器的启动和端口绑定。使用 Gunicorn 启动网页后，`app.py` 中对端口的配置会被直接覆盖。
+在开发环境中，通常使用 `app.run()` 方法启动 Flask 内置服务器，并指定主机和端口，如上例中的 `app.run(host='0.0.0.0', port=5000)`。然而，在生产环境中，使用 Gunicorn 等 WSGI 服务器时，**无需**在 `app.py` 中调用 `app.run()`。这是因为 Gunicorn 会自行管理服务器的启动和端口绑定。使用 Gunicorn 启动网页后，`app.py` 中对端口的配置会被直接覆盖。如果不在 Gunicorn 命令中指定端口，则默认 `0.0.0.0:8000` 并覆盖原配置。
 
 因此，当使用 Gunicorn 部署时，您只需确保在 `app.py` 中定义了 Flask 应用实例，而不需要调用 `app.run()`。然后，通过命令行指定 Gunicorn 的绑定地址和端口，例如：
 
