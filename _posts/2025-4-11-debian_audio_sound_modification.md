@@ -20,6 +20,8 @@ alsamixer
   - `Mic Boost` 或 `Capture`：设置为 0%（或禁用）
   - `Auto-Mute Mode`：设置为 `Disabled`
 - 按 `Esc` 保存退出
+- 可使用命令 `sudo alsactl store` 命令来保存当前配置。
+- 下次开机后使用 `sudo alsactl restore` 重新加载已保存的配置。
 
 ------
 
@@ -28,7 +30,7 @@ alsamixer
 编辑 ALSA 配置以启用噪音抑制：
 
 ```bash
-sudo nano /etc/modprobe.d/alsa-base.conf
+sudo nvim /etc/modprobe.d/alsa-base.conf
 ```
 
 添加以下参数（尝试不同组合）：
