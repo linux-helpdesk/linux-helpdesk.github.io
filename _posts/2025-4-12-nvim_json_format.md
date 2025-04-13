@@ -6,7 +6,7 @@ category: Linux
 layout: post
 ---
 
-首先需要你系统中有安装 `jq`。
+需要你系统中有安装 `jq`。
 
 For json, you could just run `:%!jq .` If you have jq installed on your system.
 
