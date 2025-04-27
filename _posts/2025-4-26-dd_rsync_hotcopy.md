@@ -30,5 +30,5 @@ e2fsck -f /dev/mapper/sdb3_crypt -y
 ```bash
 mount /dev/mapper/sdb3_crypt /mnt
 rm -rf /mnt/*
-rsync --progress -av /* /mnt/ --exclude=/mnt
+rsync --progress -av /* /mnt/ --exclude=/mnt --exclude=/proc
 ```
