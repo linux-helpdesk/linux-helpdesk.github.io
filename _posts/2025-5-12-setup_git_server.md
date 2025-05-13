@@ -36,7 +36,7 @@ $ cd myproject
 $ git init
 $ git add .
 $ git commit -m 'initial commit'
-$ git remote add origin git@gitserver:/srv/git/project.git
+$ git remote add origin git@gitserver:/home/git/project.git
 $ git push origin master
 ```
 
@@ -45,7 +45,7 @@ If you wanna multiple developers, run the same `ssh-keygen` and `ssh-copy-id` as
 ```bash
 $ ssh-keygen -t rsa -b 4096
 $ ssh-copy-id git@[gitserver]
-$ git clone git@gitserver:/srv/git/project.git
+$ git clone git@gitserver:/home/git/project.git
 $ cd project
 $ vim README
 $ git commit -am 'fix for the README file'
