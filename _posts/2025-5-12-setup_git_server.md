@@ -51,3 +51,9 @@ $ vim README
 $ git commit -am 'fix for the README file'
 $ git push origin master
 ```
+
+To limit the operation of the git
+
+```bash
+chsh git -s $(which git-shell)
+```
