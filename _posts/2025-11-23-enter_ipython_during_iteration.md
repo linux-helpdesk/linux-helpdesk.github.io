@@ -35,6 +35,19 @@ if i == 5:
     embed()
 ```
 
+或者如果已经调试完成不想再进行后续的进入，可以设置一个控制变量：
+
+```Python
+from IPython import embed
+
+loop = True
+for i in range(5):
+    if loop:
+        embed(header="Exit Test")
+```
+
+当想结束调试让程序自动进行后续循环时，只需要在调试环境内赋值 `False` 给 `loop` 变量然后退出即可。
+
 ------
 
 # ✅ **方法 2：使用 `IPython.core.debugger.set_trace()` 像 pdb 一样断点**
