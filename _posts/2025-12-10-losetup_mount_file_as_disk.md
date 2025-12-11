@@ -76,5 +76,12 @@ lsblk /dev/loop0
 sudo mount /dev/loop0p1 /mnt/some_mount_point
 ```
 
+如果要卸载设备：
+```bash
+sudo umount /dev/loop0p1
+sudo losetup -d /dev/loop0
+```
+
 这种方法非常实用，常用于检查、修复或修改系统镜像、恢复数据等场景。
+
 
