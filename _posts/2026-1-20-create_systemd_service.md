@@ -100,3 +100,26 @@ systemctl status myweb
 * `Environment="DB_PASSWORD=secret123"`
 * 或者指向一个文件：`EnvironmentFile=/etc/default/myweb`
 
+> **1. 文件内容示例**
+>
+> 假设你创建了一个文件 `/etc/default/myweb`（文件名和路径可以自定义，但通常放在 `/etc/default/` 或 `/etc/sysconfig/` 下）：
+>
+> ```ini
+> # 这是一个注释
+> DB_HOST=127.0.0.1
+> DB_PORT=3306
+> DB_USER=admin
+> # 即使有特殊字符，通常也不强制加引号，但推荐加引号以防万一
+> DB_PASSWORD="complex_password_with_#_symbols"
+> # 也可以定义程序运行模式
+> APP_ENV=production
+> ```
+>
+> **2. 关键语法规则**
+>
+> - **格式**：每一行都是 `KEY=VALUE`。
+> - **注释**：以 `#` 或 `;` 开头的行会被忽略。
+> - **空格**：变量名周围不能有空格（例如 `DB_USER = admin` 是错误的）。
+> - **引号**：如果值里面包含空格或特殊字符，建议用双引号 `"` 或单引号 `'` 括起来。
+> - **不支持 Shell 脚本语法**：你不能在里面写 `export VAR=val`，也不能写循环或判断语句。
+
