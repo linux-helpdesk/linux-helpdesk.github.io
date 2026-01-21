@@ -100,4 +100,3 @@ systemctl status myweb
 * `Environment="DB_PASSWORD=secret123"`
 * 或者指向一个文件：`EnvironmentFile=/etc/default/myweb`
 
-**你想了解如何通过 `journalctl` 命令来精准地给你的新 Service 排查错误（看日志）吗？**
