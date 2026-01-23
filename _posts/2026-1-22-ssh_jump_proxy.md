@@ -71,6 +71,48 @@ Host target
 
 ```
 
+注意这里有了配置文件后，需要注意以下几种使用方法：
+
+如果想直接连接配置文件中的某个主机，则可以直接写其对应的名称，比如：
+
+```bash 
+# 连接跳板机 JumpA，此时为对 A 直连
+# 程序会自动读取这个 “Hostname” 对应哪个 IP 以及哪些登录信息
+ssh JumpA # 或者 ssh -F ~/.ssh/config JumpA 
+
+# 连接跳板机 JumpB，此时为通过 A 跳板连接 
+ssh JumpB 
+
+# 连接最终目标 
+ssh target 
+```
+
+如果你要连接的目标主机不在配置文件中，那么跳板不会自动生效，而是需要你在命令中使用 `-J` 参数指定使用：
+
+```bash 
+ssh -J JumpB user@ip 
+# 这里是通过跳板 A 和跳板 B 对最终目标进行连接
+# 和下面这种写法等效
+ssh -J JumpA,JumpB user@ip 
+```
+
+但注意 `-J JumpA,JumpB` 和 `-J JumpB,JumpA` 是不等效的，后者的流量会按照如下流程经过：
+
+```mermaid
+graph LR 
+
+Local --> JumpA 
+JumpA --> JumpB 
+JumpB --> JumpA 
+JumpA --> target
+```
+
+你也可以添加配置文件以外的跳板机直接到命令中：
+
+```bash 
+ssh -J JumpB,userC@JumpHostC user@ip 
+```
+
 ---
 
 ## 3. 进阶：跳板机端口不在 22
