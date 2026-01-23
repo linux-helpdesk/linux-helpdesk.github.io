@@ -174,4 +174,3 @@ logread -f
 * **防火墙**：如果服务器上无法连接，请确认服务器已在安全组/防火墙放行了该端口。
 * **内存监测**：由于 720N 只有 32MB 内存，建议定期运行 `free -m`。若内存极度紧张，可考虑手动解压 `.ipk` 提取二进制文件到 `/root`，省去 `opkg update` 的内存开销。
 
-Would you like me to help you create a version that uses pre-downloaded `.ipk` files to make the boot process even faster and offline-ready?
