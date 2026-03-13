@@ -29,16 +29,31 @@ layout: post
 
 ```
 # 安装 esptool
-pip install esptool
-
+$ pip install esptool
+...
 # 查看 Flash ID
-python3 -m esptool --port /dev/ttyUSB0 flash-id
+$ python3 -m esptool --port /dev/ttyUSB0 flash_id
+Warning: Deprecated: Command 'flash_id' is deprecated. Use 'flash-id' instead.
+esptool v5.2.0
+Connected to ESP8266 on /dev/ttyUSB0:
+Chip type:          ESP8266EX
+Features:           Wi-Fi, 160MHz
+Crystal frequency:  26MHz
+MAC:                48:3f:da:c4:70:02
+
+Stub flasher running.
+
+Flash Memory Information:
+=========================
+Manufacturer: c4
+Device: 6016
+Detected flash size: 4MB
+
+Hard resetting via RTS pin...
 ```
 
 **输出参考：**
 
-> Warning: Deprecated: Command 'flash_id' is deprecated. Use 'flash-id' instead.
->
 > Chip type: ESP8266EX
 >
 > Detected flash size: **4MB**
@@ -48,7 +63,23 @@ python3 -m esptool --port /dev/ttyUSB0 flash-id
 根据获取到的 4MB 容量数据，我们选择刷入 [v1.22.2](https://micropython.org/resources/firmware/ESP8266_GENERIC-20240222-v1.22.2.bin) 版本的 MicroPython 固件。
 
 ```bash
-python3 -m esptool --port /dev/ttyUSB0 --chip esp8266 --baud 115200 write-flash --flash-mode dout --flash-size 4MB 0x0 ESP8266_GENERIC-20240222-v1.22.2.bin
+$ python3 -m esptool --port /dev/ttyUSB0 --chip esp8266 --baud 115200 write-flash --flash-mode dout --flash-size 4MB 0x0 ESP8266_GENERIC-20240222-v1.22.2.bin
+esptool v5.2.0
+Connected to ESP8266 on /dev/ttyUSB0:
+Chip type:          ESP8266EX
+Features:           Wi-Fi, 160MHz
+Crystal frequency:  26MHz
+MAC:                48:3f:da:c4:70:02
+
+Stub flasher is already running. No upload is necessary.
+
+Configuring flash size...
+Flash parameters set to 0x0340.
+Flash will be erased from 0x00000000 to 0x0009cfff...
+Wrote 642080 bytes (426777 compressed) at 0x00000000 in 38.1 seconds (135.0 kbit/s).
+Hash of data verified.
+
+Hard resetting via RTS pin...
 ```
 
 ### 4. 交互式命令行测试
@@ -57,15 +88,37 @@ python3 -m esptool --port /dev/ttyUSB0 --chip esp8266 --baud 115200 write-flash 
 
 ```bash
 # 安装 picocom
-sudo apt install picocom
-
+$ sudo apt install picocom
+...
 # 连接串口
-picocom /dev/ttyUSB0 -b 115200
-```
+$ picocom /dev/ttyUSB0 -b 115200
 
-在终端按下回车，进入 `>>>` 提示符后输入测试代码：
+port is        : /dev/ttyUSB0
+flowcontrol    : none
+baudrate is    : 115200
+parity is      : none
+databits are   : 8
+stopbits are   : 1
+escape is      : C-a
+local echo is  : no
+noinit is      : no
+noreset is     : no
+hangup is      : no
+nolock is      : no
+send_cmd is    : sz -vv
+receive_cmd is : rz -vv -E
+imap is        :
+omap is        :
+emap is        : crcrlf,delbs,
+logfile is     : none
+initstring     : none
+exit_after is  : not set
+exit is        : no
 
-```python
+Type [C-a] [C-h] to see available commands
+Terminal ready
+
+# 此时按下回车进入命令行
 >>> print("Hello")
 Hello
 ```
