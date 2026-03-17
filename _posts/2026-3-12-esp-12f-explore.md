@@ -18,7 +18,7 @@ layout: post
 
 首先拿到板子，样子如下：
 
-![ESP8266 with IR RX](https://linux-helpdesk.github.io/assets/images/ESP-12F.jpg)
+![ESP8266 with IR RX](https://linux-helpdesk.github.io/assets/images/ESP-12F.jpeg)
 
 **进入刷机模式：**
 
