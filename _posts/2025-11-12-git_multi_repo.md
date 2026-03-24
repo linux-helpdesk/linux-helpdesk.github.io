@@ -81,6 +81,8 @@ git remote get-url origin
 admin@localhost:/home/admin/test-remote
 ```
 
+`origin` 是 Git 中远程仓库的默认别名（即简写名），远程仓库名称也可以随意自定义。当执行首次添加时，这个名称还不存在。
+
 ------
 
 ### 3. 首次推送（设置上游分支）
@@ -89,6 +91,8 @@ admin@localhost:/home/admin/test-remote
 
 ```bash
 git push
+# Or 
+# git push origin master 
 ```
 
 错误提示：
