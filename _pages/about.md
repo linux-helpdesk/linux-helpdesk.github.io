@@ -32,5 +32,6 @@ layout: post
 
 ### 联系方式
 - 个人微信：Warrenzhao19980315
+- 个人邮箱：warren_zhao@outlook.com
 
 如有关于人工智能、Linux 运维或其他相关技术的问题，欢迎随时联系！
